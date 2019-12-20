@@ -39,6 +39,7 @@ Here are the fields belonging to YouTube queries:
 Here is an example YouTube query that collects videos from the "zizek" search on YouTube that are longer than 20 minutes, have over 1,000 views, and aren't marked as seen on my account:
 ```
 {
+    "CRAWLER_TYPE" : "YOUTUBE",
     "search_text" : "zizek",
     "search_condition" : "SEEN and SECONDS > (60*20) and VIEWS > 1000"
 }
