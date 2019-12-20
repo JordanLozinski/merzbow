@@ -1,0 +1,5 @@
+{
+    "CRAWLER_TYPE" : "YOUTUBE",
+    "search_text" : "zizek",
+    "search_condition" : "SEEN and SECONDS > (60*20) and VIEWS > 1000"
+}
