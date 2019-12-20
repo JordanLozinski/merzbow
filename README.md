@@ -4,10 +4,6 @@
 
 TBD
 
-### Dependencies:
-
-See `requirements.txt` in the project root folder.
-
 ## The motivation for this project
 
 I like to listen to philosophy/politics/etc lectures while I'm doing work or wasting time. The material is usually interesting and it's not a big deal if I zone out and miss something. It would be nice to be able to gather material like this automatically so I don't have to go looking for more material so often.
@@ -29,6 +25,7 @@ Here are the fields belonging to YouTube queries:
 
 - **`search_text`:** (Required) The string to search for on YouTube.
 - **`audio_only`:** If `audio_only`== 1, only the audio of the selected videos will be outputted.
+- **`output_playlist`:** If `output_playlist` is specified, instead of outputting to a file, videos will be added to a YouTube playlist (the name of the playlist will be the value of `output_playlist`).
 - **`search_condition`:** The value is interpreted as a Python expression that evaluates to a Boolean value per video. If the value is false the video is excluded from the selection. The expression has some variables you can make use of:
     - `VIEWS` (The number of views the video has)
     - `LIKES` (The number of likes the video has)
